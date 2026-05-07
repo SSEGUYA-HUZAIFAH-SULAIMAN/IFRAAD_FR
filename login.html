@@ -1,0 +1,417 @@
+
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Login | IFRAAD Learning Centre</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+
+            <link rel="stylesheet" href="fonts-googleapis.css">
+    <link rel="stylesheet" href="fonts-googleapis2.css">
+        <script src="../assets/tailwind.js"></script>
+    <link rel="icon" href="../assets/IFR.png">
+    
+    <!-- Material Symbols -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-container": "#e2dfde",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#94a0ff",
+              "surface-container": "#eeeeee",
+              outline: "#8e706c",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed-dim": "#bcc2ff",
+              "tertiary-fixed": "#dfe0ff",
+              "surface-container-low": "#f3f3f3",
+              "surface-variant": "#e2e2e2",
+              "on-secondary-fixed": "#1c1b1b",
+              tertiary: "#00137f",
+              "primary-container": "#800000",
+              "on-primary": "#ffffff",
+              "on-error": "#ffffff",
+              background: "#f9f9f9",
+              "surface-dim": "#dadada",
+              "primary-fixed-dim": "#ffb4a8",
+              "on-primary-fixed-variant": "#8f0f07",
+              "surface-container-high": "#e8e8e8",
+              "inverse-primary": "#ffb4a8",
+              "on-tertiary-fixed": "#000c61",
+              "secondary-fixed-dim": "#c8c6c5",
+              "on-tertiary-fixed-variant": "#1830c2",
+              "inverse-surface": "#2f3131",
+              "error-container": "#ffdad6",
+              "on-surface-variant": "#5a413d",
+              "on-primary-fixed": "#410000",
+              surface: "#f9f9f9",
+              "secondary-fixed": "#e5e2e1",
+              "on-secondary": "#ffffff",
+              primary: "#570000",
+              "on-primary-container": "#ff8371",
+              "inverse-on-surface": "#f0f1f1",
+              "on-secondary-fixed-variant": "#474746",
+              "tertiary-container": "#0021b9",
+              "surface-tint": "#b22b1d",
+              "on-error-container": "#93000a",
+              "on-secondary-container": "#636262",
+              error: "#ba1a1a",
+              "surface-container-highest": "#e2e2e2",
+              "outline-variant": "#e2bfb9",
+              "on-surface": "#1a1c1c",
+              "on-background": "#1a1c1c",
+              "surface-bright": "#f9f9f9",
+              "primary-fixed": "#ffdad4",
+              secondary: "#5f5e5e",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            fontFamily: {
+              headline: ["Noto Serif"],
+              body: ["Inter"],
+              label: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .signature-gradient {
+        background: linear-gradient(135deg, #570000 0%, #800000 100%);
+      }
+      .ghost-border {
+        border: 1px solid rgba(226, 191, 185, 0.15);
+      }
+      .ghost-border:hover {
+        border-color: rgba(226, 191, 185, 1);
+      }
+            .navbar-collapse.collapse {
+        visibility: visible !important;
+      }
+    </style>
+  </head>
+  <body class="bg-surface text-on-surface font-body min-h-screen flex flex-col">
+    <!-- TopAppBar Fragment (Suppressing Nav for Focused Transactional State) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white/85 dark:bg-stone-900/85 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 p-0">
+  <div class="container-fluid px-6 py-3 max-w-screen-2xl mx-auto">
+    
+    <a class="navbar-brand d-flex align-items-center text-xl font-serif font-bold text-red-900 dark:text-red-500" href="index.html">
+      <img href="index.html" src="assets/IFR.png" width="50" alt="School Logo" class="me-3">
+      <span class="d-none d-lg-block">IFRAAD Learning Centre</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-4 align-items-center text-center">
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="gallery.html">Gallery</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="program.html">Programs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="events.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="contactus.html">Contact Us</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- Main Content Canvas -->
+    <main
+      class="flex-grow flex items-center justify-center relative px-6 py-12"
+    >
+      <!-- Background Image Container (The Scholar's Backdrop)            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZwrfXSjhyCrkPgyCBSjyM7fIXDDZ4j2sXNkbvQVuYU9fXX9naQ6_kl58es7SBBrGqt_k8CiO5is_70wjY7-LsmSuXVXlrr42PtwdjFMknyp7GB13JFR-XxGQ1xGnkCHwmkR4rBnD2xwyloa_7I3EhMcjeoi6u6kmJfn3lXkIxZdfg8paybejqz6RoN89c0UzGT54wr0WSpKqIRBnnIKj2P5WQT2gKOLk7KFJ6pvVqxjsN2t3IwhQOyeNUN_VTRSZ-C-6YIcjjDs3t"
+-->
+      <div class="absolute inset-0 z-0 overflow-hidden">
+        <div
+          class="absolute inset-0 bg-stone-900/40 z-10 backdrop-blur-[2px]"
+        ></div>
+        <img alt="www "
+          class="w-full h-full object-cover"
+          data-alt="expansive modern university library hall with soaring wood ceilings soft natural light and rows of architectural bookshelves in deep tones"
+          src="assets/imgFront/image9.jpg" />
+      </div>
+      <!-- Archival Breadcrumb (Contextual Orientor) -->
+      <div class="absolute top-8 left-12 z-20 hidden md:block">
+        <nav
+          class="flex items-center gap-3 text-[10px] font-label font-semibold tracking-widest uppercase text-white/80"
+        >
+         <!-- <span>PORTAL</span>
+          <span class="text-primary-container">|</span>
+          <span>AUTHENTICATION</span>
+          <span class="text-primary-container">|</span>-->
+          <span class="text-white"><a href="index.html" >Home</a></span>
+        </nav>
+      </div>
+      <!-- Centered Login Card (The Scholar's Card) -->
+      <div
+        class="w-70 max-w-500 z-20 bg-surface-container-lowest/95 backdrop-blur-xl rounded shadow-[0px_8px_24px_rgba(90,65,61,0.08)] p-8 md:p-12"
+      >
+        <!-- Branding Header -->
+        <div class="text-center mb-10">
+          <div class="inline-block mb-6">
+
+              <img src="assets/IFR.png" alt="badge"
+    			     width="150">
+            
+          </div>
+          <h1
+            class="font-headline text-3xl font-bold text-on-surface tracking-tight mb-2"
+          >
+            IFRAAD Learning Centre
+          </h1>
+          <p
+            class="text-on-surface-variant font-label text-sm uppercase tracking-widest"
+          >
+            Spark Their Curiosity
+          </p>
+        </div>
+            		<?php if (isset($_GET['error'])) { ?>
+    		<div class="alert alert-danger" role="alert">
+			  <?=ee($_GET['error'])?>
+			</div>
+			<?php } ?>
+        <!-- Login Form -->
+        <form class="space-y-8" method="post" action="req/login">
+          <!-- Input Group: ID -->
+          <div class="relative group">
+            <label
+              class="block text-[10px] font-label font-bold text-on-surface-variant uppercase tracking-widest mb-1 group-focus-within:text-primary-container transition-colors"
+              for="uname"
+            >
+              Username
+            </label>
+            <input
+              class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant focus:border-primary-container focus:ring-0 focus:bg-surface-container-highest/30 px-0 py-3 text-on-surface placeholder:text-stone-300 transition-all duration-300"
+              id="uname"
+              name="uname"
+              placeholder="Enter your credentials"
+              type="text"
+            />
+          </div>
+          <!-- Input Group: Password -->
+          <div class="relative group">
+            <div class="flex justify-between items-end mb-1">
+              <label
+                class="block text-[10px] font-label font-bold text-on-surface-variant uppercase tracking-widest group-focus-within:text-primary-container transition-colors"
+                for="pass"
+              >
+                Password
+              </label>
+             <!-- <a
+                class="text-[10px] font-label font-bold text-primary-container uppercase tracking-widest hover:underline decoration-1 underline-offset-4"
+                href="#"
+              >
+                Forgot?
+              </a> -->
+            </div>
+            <input
+              class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-outline-variant focus:border-primary-container focus:ring-0 focus:bg-surface-container-highest/30 px-0 py-3 text-on-surface placeholder:text-stone-300 transition-all duration-300"
+              id="pass"
+              name="pass"
+              placeholder="••••••••"
+              type="password"
+            />
+          </div>
+          <!-- Actions: Remember Me -->
+          <div class="flex items-center">
+            <input
+              class="h-4 w-4 rounded-sm border-outline-variant text-primary-container focus:ring-primary-container focus:ring-offset-surface-container-lowest"
+              id="remember"
+              name="remember"
+              type="checkbox"
+            />
+            <label
+              class="ml-3 text-xs font-label text-on-surface-variant tracking-wide"
+              for="remember"
+            >
+              Remeber me
+            </label>
+          </div>
+          <!-- Submit Button (Signature Gradient) -->
+          <button type="submit"
+            class="w-full signature-gradient text-white py-4 px-6 rounded font-label font-bold text-sm uppercase tracking-[0.1em] shadow-lg hover:shadow-xl hover:opacity-95 transition-all duration-300 active:scale-[0.98]"
+            type="submit"
+          >
+            Sign In
+          </button>
+        </form>
+        <!-- Secondary Action 
+        <div class="mt-12 text-center pt-8 border-t border-outline-variant/10">
+          <p
+            class="text-xs text-on-surface-variant font-label tracking-wide mb-4"
+          >
+            New to the Institution?
+          </p>
+          <button
+            class="w-full py-3 px-6 rounded border border-outline-variant/20 text-on-surface font-label font-bold text-[10px] uppercase tracking-widest hover:bg-surface-container-low transition-colors duration-200"
+          >
+            Request Registration Access
+          </button>
+        </div>
+      </div>-->
+    </main>
+    <!-- Footer -->
+   <footer class="bg-stone-950 text-stone-400 full-width py-16 px-8 mt-auto">
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-screen-2xl mx-auto"
+      >
+        <div class="col-span-1 md:col-span-1 space-y-6">
+          <div class="text-lg font-serif text-white">
+            IFRAAD Learning Centre
+          </div>
+          <p class="text-xs leading-relaxed max-w-xs">
+            IFRAAD Learning Centre is a dedicated school that offers Islamic and circular studies to all population in the society not forgetting that it is also a Quran Memorization centre.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-serif text-sm mb-6">Quick Links</h4>
+          <ul class="space-y-4 text-xs tracking-widest uppercase">
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="index"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="aboutus"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a class="text-white font-bold inline-block" href="program"
+                >Programs</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="events"
+                >Events</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-6">
+          <h4 class="text-white font-serif text-sm mb-6">Social Media</h4>
+          <ul class="space-y-4 text-xs tracking-widest uppercase">
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="#"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="https://vm.tiktok.com/ZMB7Tcx6K/"
+                >TikTok</a
+              >
+            </li>
+            <li>
+              <a class="text-white inline-block" href="#"
+                >X</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="www.youtube.com/@Hayafir"
+                >YouTube</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-6">
+          <h4 class="text-white font-serif text-sm mb-6">Contact Info</h4>
+          <ul class="space-y-4 text-xs tracking-widest uppercase">
+            <li class="flex items-center gap-2">
+              <span
+                class="material-symbols-outlined text-sm text-red-800"
+                data-icon="location_on"
+                >location_on</span
+              >
+              Mpigi District [COURT ROAD], Uganda
+            </li>
+            <li class="flex items-center gap-2">
+              <span
+                class="material-symbols-outlined text-sm text-red-800"
+                data-icon="mail"
+                >mail</span
+              >
+              ifraadlearningcentre@gmail.com
+            </li>
+            <li class="flex items-center gap-2">
+              <span
+                class="material-symbols-outlined text-sm text-red-800"
+                data-icon="call"
+                >call</span
+              >
+              +256 705 098208, +256 701 331563, <br> +256 706 944934, +256 771 861177
+            </li>
+
+          </ul>
+        </div>
+
+      <div
+        class="max-w-screen-2xl mx-auto px-8 mt-16 pt-8 border-t border-white/5 text-center"
+      >
+        <p class="text-stone-500 text-[10px] tracking-widest uppercase">
+          © 2026 IFRAAD Learning Centre. All Rights Reserved.
+        </p>
+      </div>
+      </div>
+    </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>	
+
+  </body>
+</html>

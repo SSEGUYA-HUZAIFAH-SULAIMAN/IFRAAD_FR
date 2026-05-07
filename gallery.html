@@ -1,0 +1,823 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title> Gallery | IFRAAD Learning Centre</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link rel="stylesheet" href="assets/fonts-googleapis.css" />
+    <link rel="stylesheet" href="assets/fonts-googleapis2.css" />
+            <script src="assets/tailwind.js"></script>
+
+    <link rel="icon" href="assets/IFR.png">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#5a413d",
+              "on-primary": "#ffffff",
+              "on-primary-container": "#ff8371",
+              "primary-container": "#800000",
+              "secondary-container": "#e2dfde",
+              "secondary-fixed": "#e5e2e1",
+              "on-tertiary-fixed-variant": "#1830c2",
+              "on-secondary-fixed-variant": "#474746",
+              "on-secondary-fixed": "#1c1b1b",
+              "on-secondary-container": "#636262",
+              "on-primary-fixed-variant": "#8f0f07",
+              "error-container": "#ffdad6",
+              "surface-container": "#eeeeee",
+              "primary-fixed-dim": "#ffb4a8",
+              "on-error": "#ffffff",
+              "surface-bright": "#f9f9f9",
+              "surface-container-low": "#f3f3f3",
+              "on-error-container": "#93000a",
+              "on-background": "#1a1c1c",
+              "primary-fixed": "#ffdad4",
+              primary: "#570000",
+              background: "#f9f9f9",
+              "secondary-fixed-dim": "#c8c6c5",
+              "surface-container-lowest": "#ffffff",
+              "inverse-on-surface": "#f0f1f1",
+              "on-tertiary-fixed": "#000c61",
+              "on-surface": "#1a1c1c",
+              "tertiary-fixed-dim": "#bcc2ff",
+              outline: "#8e706c",
+              "surface-container-high": "#e8e8e8",
+              "inverse-surface": "#2f3131",
+              "on-primary-fixed": "#410000",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed": "#dfe0ff",
+              "on-tertiary-container": "#94a0ff",
+              "on-secondary": "#ffffff",
+              secondary: "#5f5e5e",
+              "tertiary-container": "#0021b9",
+              "outline-variant": "#e2bfb9",
+              "surface-container-highest": "#e2e2e2",
+              tertiary: "#00137f",
+              "surface-variant": "#e2e2e2",
+              "inverse-primary": "#ffb4a8",
+              "surface-tint": "#b22b1d",
+              "surface-dim": "#dadada",
+              error: "#ba1a1a",
+              surface: "#f9f9f9",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            fontFamily: {
+              headline: ["Noto Serif"],
+              body: ["Inter"],
+              label: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 300,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .signature-gradient {
+        background: linear-gradient(135deg, #570000 0%, #800000 100%);
+      }
+      .archival-border {
+        border-bottom: 2px solid #e2bfb926;
+      }
+      /* Fix conflict between Bootstrap and Tailwind 'collapse' class */
+      .navbar-collapse.collapse {
+        visibility: visible !important;
+      }
+            .masonry-grid {
+        columns: 1;
+      }
+      @media (min-width: 768px) {
+        .masonry-grid {
+          columns: 2;
+        }
+      }
+      @media (min-width: 1024px) {
+        .masonry-grid {
+          columns: 3;
+        }
+      }
+
+
+    </style>
+  </head>
+  <body
+    class="bg-surface font-body text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed"
+  >
+    <!-- TopNavBar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white/85 dark:bg-stone-900/85 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 p-0">
+  <div class="container-fluid px-6 py-3 max-w-screen-2xl mx-auto">
+    
+    <a class="navbar-brand d-flex align-items-center text-xl font-serif font-bold text-red-900 dark:text-red-500" href="index.html">
+      <img href="index.html" src="assets/IFR.png" width="50" alt="School Logo" class="me-3">
+      <span class="d-none d-lg-block">IFRAAD Learning Centre</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-4 align-items-center text-center">
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-red-900 dark:text-red-400 border-b-2 border-red-900 dark:border-red-400 pb-1" href="gallery.html">Gallery</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="program.html">Programs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="events.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="contactUs.html">Contact Us</a>
+        </li>
+        <button
+        class="signature-gradient text-white px-6 py-2 rounded shadow-sm text-sm font-bold tracking-widest uppercase hover:opacity-90 transition-all"
+      >
+       <a href="applynow.html" class="text-white no-underline"> Apply Now</a>
+      </button>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- Hero Section -->
+      <section class="relative h-[614px] overflow-hidden">
+        <img
+          alt="Main Library Building"
+          class="w-full h-full object-cover"
+          data-alt="Stately gothic architecture of a prestigious university library at twilight with warm interior lighting glowing through tall arched windows"
+          src="assets/imgFront/image29.jpg"        />
+        <div
+          class="absolute inset-0 bg-black/40 flex flex-col justify-end p-12 lg:p-24"
+        >
+          <div class="max-w-4xl">
+            <nav
+              class="mb-6 flex items-center gap-2 font-sans text-[10px] uppercase tracking-[0.2em] text-white/80"
+            >
+              <span>Campus</span>
+              <span class="text-primary-fixed">|</span>
+              <span>Archives</span>
+              <span class="text-primary-fixed">|</span>
+              <span class="text-white">Gallery</span>
+            </nav>
+            <h1
+              class="font-headline text-5xl md:text-7xl lg:text-8xl text-white font-bold tracking-tighter leading-none mb-4"
+            >
+              Campus Gallery
+            </h1>
+            <p
+              class="font-body text-lg md:text-xl text-white/90 max-w-2xl font-light italic"
+            >
+              Documenting the architectural soul and intellectual legacy of the
+              IFRAAD Learning Centre through the decades.
+            </p>
+          </div>
+        </div>
+      </section>
+    
+    <!-- Curated Learning Paths -->
+    <section class="py-32 bg-surface-container-low">
+      <div class="max-w-screen-2xl mx-auto px-8">
+        <div class="flex justify-between items-end mb-20">
+          <div class="max-w-2xl">
+
+            <h2 class="text-5xl font-headline font-bold text-on-surface">
+              Certifications
+            </h2>
+          </div>
+
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <!-- Program Card 1 -->
+          <div
+            class="group relative aspect-[4/5] bg-surface-container-lowest overflow-hidden"
+          >
+            <img
+              alt="certifications"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              data-alt="Ancient literature books stacked elegantly on a mahogany table in a dimly lit library setting."
+              src="assets/imgFront/photo12.jpg"
+              />
+            <div
+              class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-8 text-white z-10 translate-y-4 group-hover:translate-y-0 transition-transform"
+            >
+              <h4 class="text-2xl font-headline font-bold mb-2">
+                Certifications
+              </h4>
+              <p
+                class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-body"
+              >
+                Deep immersion into philosophy, literature, and history.
+              </p>
+            </div>
+          </div>
+          <!-- Program Card 2 -->
+          <div
+            class="group relative aspect-[4/5] bg-surface-container-lowest overflow-hidden"
+          >
+            <img
+              alt="STEM"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              data-alt="Close-up of high-precision scientific glass equipment in a clean, modern laboratory with cool blue tones."
+              src="assets/imgFront/photo17.jpg"
+              />
+            <div
+              class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-8 text-white z-10 translate-y-4 group-hover:translate-y-0 transition-transform"
+            >
+              <h4 class="text-2xl font-headline font-bold mb-2">
+                Advanced STEM
+              </h4>
+              <p
+                class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-body"
+              >
+                Pioneering research and mathematical excellence.
+              </p>
+            </div>
+          </div>
+          <!-- Program Card 3 -->
+          <div
+            class="group relative aspect-[4/5] bg-surface-container-lowest overflow-hidden"
+          >
+            <img
+              alt="Technology"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              data-alt="Sleek modern workstation with multiple monitors displaying complex code and data visualizations."
+              src="assets/imgFront/photo22.jpg"            />
+            <div
+              class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-8 text-white z-10 translate-y-4 group-hover:translate-y-0 transition-transform"
+            >
+              <h4 class="text-2xl font-headline font-bold mb-2">
+                
+              </h4>
+              <p
+                class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-body"
+              >
+              </p>
+            </div>
+          </div>
+          <!-- Program Card 4 -->
+          <div
+            class="group relative aspect-[4/5] bg-surface-container-lowest overflow-hidden"
+          >
+            <img
+              alt="Arts"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              data-alt="An artist's studio with oil paintings and blank canvases bathed in natural morning light."
+              src="assets/imgFront/photo15.jpg"            />
+            <div
+              class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-8 text-white z-10 translate-y-4 group-hover:translate-y-0 transition-transform"
+            >
+              <h4 class="text-2xl font-headline font-bold mb-2">
+                Creative Arts
+              </h4>
+              <p
+                class="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-body"
+              >
+                Expressive mastery across classical and digital mediums.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Campus Gallery (Bento Grid) -->
+    <section class="py-32 bg-surface">
+      <div class="max-w-screen-2xl mx-auto px-8">
+        <h2
+          class="text-4xl font-headline font-bold text-on-surface mb-16 text-center"
+        >
+          Activities at IFRAAD Learning Centre
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-12 md:grid-rows-2 gap-4 h-[800px]"
+        >
+          <div
+            class="md:col-span-8 md:row-span-1 bg-surface-container overflow-hidden"
+          >
+            <img
+              alt="Lecture"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              data-alt="A modern lecture hall with students engaged in a deep discussion, high contrast lighting, academic focus."
+              src="assets/imgFront/image29.jpg"            />
+          </div>
+          <div
+            class="md:col-span-4 md:row-span-2 bg-surface-container overflow-hidden"
+          >
+            <img
+              alt="Lab"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              data-alt="Students working in a high-tech laboratory with microscopes and glass flasks, clean architectural lines."
+              src="assets/imgFront/image23.jpg"             />
+          </div>
+          <div
+            class="md:col-span-4 md:row-span-1 bg-surface-container overflow-hidden"
+          >
+            <img
+              alt="Common Space"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              data-alt="Vibrant campus common area with architectural wooden accents and students socializing in soft natural light."
+              src="assets/imgFront/image27.jpg"             />
+          </div>
+          <div
+            class="md:col-span-4 md:row-span-1 bg-surface-container overflow-hidden"
+          >
+            <img
+              alt="Exterior"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              data-alt="Exterior shot of a grand stone university building at twilight with glowing warm lights from the windows."
+ src="assets/imgFront/image26.jpg"             />
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- The IFRAAD Distinction -->
+       <section class="px-8 py-12 max-w-7xl mx-auto">
+        <div class="masonry-grid gap-8">
+          <!-- Card 1 -->
+          <div
+            class="relative group overflow-hidden mb-8 bg-surface-container-low transition-all duration-500 hover:shadow-2xl"
+          >
+            <img
+              alt="Main Hall Entrance"
+              class="w-full grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
+              data-alt="Wide shot of an empty mahogany-paneled university lecture hall with rows of historic wooden desks and a large ornate chalkboard"
+              src="assets/imgFront/photo15.jpg"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+            >
+              <span
+                class="text-[10px] text-white/70 uppercase tracking-widest mb-1"
+                >Academic Halls</span
+              >
+              <h3 class="font-headline text-white text-xl">
+                The North Lecture Hall, 1924
+              </h3>
+              <p class="text-white/60 text-xs mt-2 font-light">
+                Preserved architectural detail of the original learning wing.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="relative group overflow-hidden mb-8 bg-surface-container-low transition-all duration-500 hover:shadow-2xl"
+          >
+            <img
+              alt="Graduation Day"
+              class="w-full grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
+              data-alt="Students in traditional black graduation caps and gowns celebrating in a historic stone courtyard with confetti in the air"
+              src="assets/imgFront/photo21.jpg"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+            >
+              <span
+                class="text-[10px] text-white/70 uppercase tracking-widest mb-1"
+                >Campus Life</span
+              >
+              <h3 class="font-headline text-white text-xl">
+                Commencement Ceremony
+              </h3>
+              <p class="text-white/60 text-xs mt-2 font-light">
+                The transition from scholar to alumni at the Founder's Square.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="relative group overflow-hidden mb-8 bg-surface-container-low transition-all duration-500 hover:shadow-2xl"
+          >
+            <img
+              alt="School Facade"
+              class="w-full grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
+              data-alt="Detailed close-up of ivy growing on a red brick university building wall with a classical stone crest embedded in the center"
+src="assets/imgFront/photo19.jpg"             />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+            >
+              <span
+                class="text-[10px] text-white/70 uppercase tracking-widest mb-1"
+                >Campus Life</span
+              >
+              <h3 class="font-headline text-white text-xl">
+                Ivy on the Red Brick
+              </h3>
+              <p class="text-white/60 text-xs mt-2 font-light">
+                Seasonal transformation of the West Wing facade.
+              </p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="relative group overflow-hidden mb-8 bg-surface-container-low transition-all duration-500 hover:shadow-2xl"
+          >
+            <img
+              alt="Classroom Scene"
+              class="w-full grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
+              data-alt="Interior of a modern academic laboratory with clean white benches and stainless steel equipment in a bright well-lit setting"
+src="assets/imgFront/photo20.jpg"             />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+            >
+              <span
+                class="text-[10px] text-white/70 uppercase tracking-widest mb-1"
+                >Academic Halls</span
+              >
+              <h3 class="font-headline text-white text-xl">
+                Modern Research Hub
+              </h3>
+              <p class="text-white/60 text-xs mt-2 font-light">
+                State-of-the-art facilities for advanced scientific inquiry.
+              </p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div
+            class="relative group overflow-hidden mb-8 bg-surface-container-low transition-all duration-500 hover:shadow-2xl"
+          >
+            <img
+              alt="Rugby Field"
+              class="w-full grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
+              data-alt="Athletes mid-game on a perfectly manicured green field at sunset with stadium lights beginning to glow in the background"
+src="assets/imgFront/photo21.jpg"             />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+            >
+              <span
+                class="text-[10px] text-white/70 uppercase tracking-widest mb-1"
+                >Athletics</span
+              >
+              <h3 class="font-headline text-white text-xl">The Autumn Cup</h3>
+              <p class="text-white/60 text-xs mt-2 font-light">
+                A tradition of competitive excellence and teamwork.
+              </p>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div
+            class="relative group overflow-hidden mb-8 bg-surface-container-low transition-all duration-500 hover:shadow-2xl"
+          >
+            <img
+              alt="Library Stacks"
+              class="w-full grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
+              data-alt="Dramatic perspective looking up through multiple floors of circular library bookshelves filled with thousands of leather-bound books"
+ src="assets/imgFront/photo22.jpg"             />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+            >
+              <span
+                class="text-[10px] text-white/70 uppercase tracking-widest mb-1"
+                >Academic Halls</span
+              >
+              <h3 class="font-headline text-white text-xl">
+                Archival Deep Storage
+              </h3>
+              <p class="text-white/60 text-xs mt-2 font-light">
+                The silent guardians of institutional knowledge.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-12">
+          <button
+            class="px-12 py-4 border border-outline text-primary uppercase text-xs tracking-widest font-bold hover:bg-primary hover:text-white transition-all duration-300 group"
+          >
+            Load More Archives
+            <span
+              class="inline-block transition-transform group-hover:translate-y-1 ml-2"
+              >↓</span
+            >
+          </button>
+        </div>
+      </section>
+
+
+
+
+    <!-- More Updates -->
+    <section class="py-32 bg-surface-container-low">
+      <div class="max-w-screen-2xl mx-auto px-8">
+        <div class="flex items-center justify-between mb-16">
+          <h2 class="text-4xl font-headline font-bold text-on-surface">
+           More Updates
+          </h2>
+
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- News 1 -->
+          <article class="space-y-6">
+            <div class="aspect-video overflow-hidden mb-6">
+              <img
+                alt="Convocation"
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                data-alt="Graduation caps flying in the air in front of a grand academic building, traditional celebratory atmosphere."
+ src="assets/imgFront/image20.jpg"               />
+            </div>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-[10px] font-label font-bold text-primary tracking-widest uppercase"
+                >Institutional</span
+              >
+  
+          </article>
+          <!-- News 2 -->
+          <article class="space-y-6">
+            <div class="aspect-video overflow-hidden mb-6">
+              <img
+                alt="Workshop"
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                data-alt="Modern classroom environment with people looking at screens and participating in a collaborative workshop."
+ src="assets/imgFront/image31.jpg"               />
+            </div>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-[10px] font-label font-bold text-primary tracking-widest uppercase"
+                >Academic</span
+              >
+
+          </article>
+          <!-- News 3 -->
+          <article class="space-y-6">
+            <div class="aspect-video overflow-hidden mb-6">
+              <img
+                alt="Student Project"
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                data-alt="Young student presenting a research poster in an academic setting, focused and professional."
+ src="assets/imgFront/image32.jpg"               />
+            </div>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-[10px] font-label font-bold text-primary tracking-widest uppercase"
+                >Alumni</span
+              >
+
+          </article>
+        
+
+          <article class="space-y-6">
+            <div class="aspect-video overflow-hidden mb-6">
+              <img
+                alt="Convocation"
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                data-alt="Graduation caps flying in the air in front of a grand academic building, traditional celebratory atmosphere."
+ src="assets/imgFront/image20.jpg"               />
+            </div>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-[10px] font-label font-bold text-primary tracking-widest uppercase"
+                >Institutional</span
+              >
+  
+          </article>
+          <!-- News 2 -->
+          <article class="space-y-6">
+            <div class="aspect-video overflow-hidden mb-6">
+              <img
+                alt="Workshop"
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                data-alt="Modern classroom environment with people looking at screens and participating in a collaborative workshop."
+ src="assets/imgFront/image31.jpg"               />
+            </div>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-[10px] font-label font-bold text-primary tracking-widest uppercase"
+                >Academic</span
+              >
+
+          </article>
+          <!-- News 3 -->
+          <article class="space-y-6">
+            <div class="aspect-video overflow-hidden mb-6">
+              <img
+                alt="Student Project"
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                data-alt="Young student presenting a research poster in an academic setting, focused and professional."
+ src="assets/imgFront/image32.jpg"               />
+            </div>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-[10px] font-label font-bold text-primary tracking-widest uppercase"
+                >Alumni</span
+              >
+
+          </article>
+
+          <article class="space-y-6">
+            <div class="aspect-video overflow-hidden mb-6">
+              <img
+                alt="Convocation"
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                data-alt="Graduation caps flying in the air in front of a grand academic building, traditional celebratory atmosphere."
+ src="assets/imgFront/image20.jpg"               />
+            </div>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-[10px] font-label font-bold text-primary tracking-widest uppercase"
+                >Institutional</span
+              >
+  
+          </article>
+          <!-- News 2 -->
+          <article class="space-y-6">
+            <div class="aspect-video overflow-hidden mb-6">
+              <img
+                alt="Workshop"
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                data-alt="Modern classroom environment with people looking at screens and participating in a collaborative workshop."
+ src="assets/imgFront/image31.jpg"               />
+            </div>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-[10px] font-label font-bold text-primary tracking-widest uppercase"
+                >Academic</span
+              >
+
+          </article>
+          <!-- News 3 -->
+          <article class="space-y-6">
+            <div class="aspect-video overflow-hidden mb-6">
+              <img
+                alt="Student Project"
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                data-alt="Young student presenting a research poster in an academic setting, focused and professional."
+ src="assets/imgFront/image32.jpg"               />
+            </div>
+            <div class="flex items-center gap-4">
+              <span
+                class="text-[10px] font-label font-bold text-primary tracking-widest uppercase"
+                >Alumni</span
+              >
+
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+  <footer class="bg-stone-950 text-stone-400 full-width py-16 px-8 mt-auto">
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-screen-2xl mx-auto"
+      >
+        <div class="col-span-1 md:col-span-1 space-y-6">
+          <div class="text-lg font-serif text-white">
+            IFRAAD Learning Centre
+          </div>
+          <p class="text-xs leading-relaxed max-w-xs">
+            IFRAAD Learning Centre is a dedicated school that offers Islamic and circular studies to all population in the society not forgetting that it is also a Quran Memorization centre.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-serif text-sm mb-6">Quick Links</h4>
+          <ul class="space-y-4 text-xs tracking-widest uppercase">
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="aboutus.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a class="text-white font-bold inline-block" href="program.html"
+                >Programs</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="events.html"
+                >Events</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-6">
+          <h4 class="text-white font-serif text-sm mb-6">Social Media</h4>
+          <ul class="space-y-4 text-xs tracking-widest uppercase">
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="#"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="https://vm.tiktok.com/ZMB7Tcx6K/"
+                >TikTok</a
+              >
+            </li>
+            <li>
+              <a class="text-white inline-block" href="#"
+                >X</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="www.youtube.com/@Hayafir"
+                >YouTube</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-6">
+          <h4 class="text-white font-serif text-sm mb-6">Contact Info</h4>
+          <ul class="space-y-4 text-xs tracking-widest uppercase">
+            <li class="flex items-center gap-2">
+              <span
+                class="material-symbols-outlined text-sm text-red-800"
+                data-icon="location_on"
+                >location_on</span
+              >
+              Mpigi District [COURT ROAD], Uganda
+            </li>
+            <li class="flex items-center gap-2">
+              <span
+                class="material-symbols-outlined text-sm text-red-800"
+                data-icon="mail"
+                >mail</span
+              >
+              ifraadlearningcentre@gmail.com
+            </li>
+            <li class="flex items-center gap-2">
+              <span
+                class="material-symbols-outlined text-sm text-red-800"
+                data-icon="call"
+                >call</span
+              >
+              +256 705 098208, +256 701 331563, <br> +256 706 944934, +256 771 861177
+            </li>
+
+          </ul>
+        </div>
+
+      <div
+        class="max-w-screen-2xl mx-auto px-8 mt-16 pt-8 border-t border-white/5 text-center"
+      >
+        <p class="text-stone-500 text-[10px] tracking-widest uppercase">
+          © 2026 IFRAAD Learning Centre. All Rights Reserved.
+        </p>
+      </div>
+      </div>
+    </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>	
+
+       	
+
+  </body>
+</html>

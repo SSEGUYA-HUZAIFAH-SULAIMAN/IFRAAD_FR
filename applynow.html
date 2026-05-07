@@ -1,0 +1,914 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Apply Now | IFRAAD Learning Centre</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/IFR.png">
+     <link rel="stylesheet" href="fonts-googleapis.css">
+    <link rel="stylesheet" href="fonts-googleapis2.css">
+        <script src="assets/tailwind.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+
+    <script id="tailwind-config">
+      tailwind.config = {
+        important: true,
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#1a1c1c",
+              "on-secondary-fixed-variant": "#474746",
+              "on-secondary-fixed": "#1c1b1b",
+              tertiary: "#00137f",
+              "secondary-fixed": "#e5e2e1",
+              secondary: "#5f5e5e",
+              "on-primary": "#ffffff",
+              surface: "#f9f9f9",
+              primary: "#570000",
+              "primary-container": "#800000",
+              "on-secondary-container": "#636262",
+              "secondary-fixed-dim": "#c8c6c5",
+              "on-primary-fixed": "#410000",
+              "on-tertiary": "#ffffff",
+              "error-container": "#ffdad6",
+              "surface-dim": "#dadada",
+              "on-primary-fixed-variant": "#8f0f07",
+              error: "#ba1a1a",
+              "tertiary-fixed": "#dfe0ff",
+              "surface-container-low": "#f3f3f3",
+              "surface-bright": "#f9f9f9",
+              "on-tertiary-fixed": "#000c61",
+              "outline-variant": "#e2bfb9",
+              "tertiary-container": "#0021b9",
+              "inverse-primary": "#ffb4a8",
+              "surface-tint": "#b22b1d",
+              "on-background": "#1a1c1c",
+              "inverse-on-surface": "#f0f1f1",
+              "on-tertiary-fixed-variant": "#1830c2",
+              "on-error-container": "#93000a",
+              "surface-container-high": "#e8e8e8",
+              background: "#f9f9f9",
+              "tertiary-fixed-dim": "#bcc2ff",
+              outline: "#8e706c",
+              "primary-fixed": "#ffdad4",
+              "on-tertiary-container": "#94a0ff",
+              "surface-container": "#eeeeee",
+              "on-primary-container": "#ff8371",
+              "surface-container-highest": "#e2e2e2",
+              "primary-fixed-dim": "#ffb4a8",
+              "on-secondary": "#ffffff",
+              "secondary-container": "#e2dfde",
+              "surface-variant": "#e2e2e2",
+              "on-surface-variant": "#5a413d",
+              "inverse-surface": "#2f3131",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            fontFamily: {
+              headline: ["Noto Serif"],
+              body: ["Inter"],
+              label: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .signature-gradient {
+        background: linear-gradient(135deg, #570000 0%, #800000 100%);
+      }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Noto Serif", serif;
+      }
+      input[type="file"]::file-selector-button {
+        background-color: transparent;
+        border: 1px solid #e2bfb9;
+        padding: 0.25rem 0.75rem;
+        border-radius: 0.125rem;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      input[type="file"]::file-selector-button:hover {
+        background-color: #570000;
+        color: white;
+        border-color: #570000;
+      }
+            .navbar-collapse.collapse {
+        visibility: visible !important;
+      }
+    </style>
+  </head>
+  <body class="bg-surface text-on-surface min-h-screen flex flex-col">
+    <!-- Top Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white/85 dark:bg-stone-900/85 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 p-0">
+  <div class="container-fluid px-6 py-3 max-w-screen-2xl mx-auto">
+    
+    <a class="navbar-brand d-flex align-items-center text-xl font-serif font-bold text-red-900 dark:text-red-500" href="index.html">
+      <img href="index.html" src="assets/IFR.png" width="50" alt="School Logo" class="me-3">
+      <span class="d-none d-lg-block">IFRAAD Learning Centre</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-4 align-items-center text-center">
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="gallery.html">Gallery</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="program.html">Programs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="events.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Inter text-sm font-medium tracking-wide uppercase text-stone-600 dark:text-stone-400 hover:text-red-900 dark:hover:text-red-300 transition-colors" href="contactUs.html">Contact Us</a>
+        </li>
+              <button
+        class="signature-gradient text-white px-6 py-2 rounded shadow-sm text-sm font-bold tracking-widest uppercase hover:opacity-90 transition-all"
+      >
+       <a href="applynow.html" class="text-white no-underline"> Apply Now</a>
+      </button>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+    <main class="flex-grow pt-24 pb-16 px-4 md:px-8 max-w-6xl mx-auto w-full">
+      <!-- Archival Breadcrumb -->
+      <div class="mb-12">
+        <nav
+          class="text-[10px] font-bold tracking-[0.2em] uppercase text-on-surface-variant flex items-center gap-2"
+        >
+          <span>Admissions</span>
+          <span class="text-primary">|</span>
+          <span class="text-primary">Apply Now</span>
+        </nav>
+      </div>
+      <!-- Section 1: Admission Guidelines -->
+      <section class="mb-16 grid grid-cols-1 md:grid-cols-12 gap-8">
+        <div class="md:col-span-4">
+          <h1
+            class="text-4xl md:text-5xl font-headline tracking-tight text-primary leading-tight mb-4"
+          >
+            Admission Guidelines
+          </h1>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            Please review the following requirements carefully before commencing
+            your formal application to the IFRAAD Learning Centre.
+          </p>
+        </div>
+        <div
+          class="md:col-span-8 bg-surface-container-low p-8 md:p-12 border-l-4 border-primary"
+        >
+          <div class="space-y-8">
+            <div>
+              <h3 class="font-headline text-xl mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary"
+                  >description</span
+                >
+                Required Documentation
+              </h3>
+              <ul
+                class="space-y-3 text-on-surface-variant leading-relaxed list-disc list-inside marker:text-primary"
+              >
+                
+                <li>Recent passport-sized photographs</li>
+
+              </ul>
+            </div>
+            <div class="pt-6 border-t border-outline-variant/30">
+              <h3 class="font-headline text-xl mb-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary"
+                  >event_available</span
+                >
+                Key Deadlines
+              </h3>
+              <p class="text-on-surface-variant">
+                The final date for submission of the Term application
+                is <b>August 15th, 2026</b>. Late applications will only be
+                considered based on seat availability and may incur a processing
+                fee.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 2: The Application Form -->
+      <section
+        class="bg-surface-container-lowest rounded-lg p-8 md:p-16 shadow-[0_8px_24px_rgba(90,65,61,0.05)] border border-outline-variant/10"
+      >
+        <header class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-headline text-on-surface mb-2">
+            Student Admission Form
+          </h2>
+          <div class="w-24 h-1 signature-gradient mx-auto"></div>
+        </header>
+        <form id="admissionForm" action="portal/apply.php" class="space-y-16" method="POST" enctype="multipart/form-data">
+          <!-- Student Details -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+              <h3 class="text-xl font-headline text-primary mb-2">
+                Student Details
+              </h3>
+              <?php if (isset($_GET['error'])) { ?>
+                <div class="alert alert-danger" role="alert">
+                  <?=htmlspecialchars($_GET['error'])?>
+                </div>
+              <?php } ?>
+              <?php if (isset($_GET['success'])) { ?>
+                <div class="alert alert-success" role="alert">
+                  <?=htmlspecialchars($_GET['success'])?>
+                </div>
+              <?php } ?>
+              <p class="text-sm text-on-surface-variant">
+                Provide the foundational identity information of the applicant.
+              </p>
+            </div>
+            <div class="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="md:col-span-2">
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Full Name</label
+                >
+                <input
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2 placeholder:text-stone-300"
+                  placeholder="As per legal documents"
+                  name="full_name"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Date of Birth</label
+                >
+                <input
+                  name="dob"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                  type="date"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Gender</label
+                >
+                <select
+                  name="gender"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                >
+                  <option value="">Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Student LIN/NIN</label
+                >
+                <input
+                  name="student_lin_nin"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2 placeholder:text-stone-300"
+                  placeholder="Learner Identification Number"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Passport Photo (Max 5MB)</label
+                >
+                <input
+                  class="w-full text-xs text-on-surface-variant file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-surface-container file:text-primary hover:file:bg-primary-fixed transition-all cursor-pointer"
+                  name="student_photo"
+                  type="file"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Nationality</label
+                >
+                <input
+                  name="nationality"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Religion</label
+                >
+                <input
+                  name="religion"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >District of Residence</label
+                >
+                <input
+                  name="district"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Village of Residence</label
+                >
+                <input
+                  name="village"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                  type="text"
+                />
+              </div>
+              <div class="md:col-span-2">
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Current Address Details</label
+                >
+                <textarea
+                  name="address"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2 placeholder:text-stone-300"
+                  placeholder="Street, Plot, Landmark"
+                  rows="2"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <!-- Mother's Details -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-12 pt-16 border-t border-outline-variant/30"
+          >
+            <div class="md:col-span-1">
+              <h3 class="text-xl font-headline text-primary mb-2">
+                Mother's Details
+              </h3>
+              <p class="text-sm text-on-surface-variant">
+                Primary maternal contact and identity information.
+              </p>
+            </div>
+            <div class="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="md:col-span-2">
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Mother's Full Name</label
+                >
+                <input
+                  name="mother_name"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >NIN Number</label
+                >
+                <input
+                  name="mother_nin"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Passport Photo</label
+                >
+                <input
+                  name="mother_photo"
+                  class="w-full text-xs text-on-surface-variant file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-surface-container file:text-primary hover:file:bg-primary-fixed transition-all"
+                  type="file"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >WhatsApp Contact</label
+                >
+                <input
+                  name="mother_whatsapp"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                  type="tel"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Email Address</label
+                >
+                <input
+                  name="mother_email"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                  type="email"
+                />
+              </div>
+              <div class="md:col-span-2">
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Place of Residence</label
+                >
+                <input
+                  name="mother_residence"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Father's Details -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-12 pt-16 border-t border-outline-variant/30"
+          >
+            <div class="md:col-span-1">
+              <h3 class="text-xl font-headline text-primary mb-2">
+                Father's Details
+              </h3>
+              <p class="text-sm text-on-surface-variant">
+                Primary paternal contact and identity information.
+              </p>
+            </div>
+            <div class="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="md:col-span-2">
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Father's Full Name</label
+                >
+                <input
+                  name="father_name"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >NIN Number</label
+                >
+                <input
+                  name="father_nin"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Passport Photo</label
+                >
+                <input
+                  name="father_photo"
+                  class="w-full text-xs text-on-surface-variant file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-surface-container file:text-primary hover:file:bg-primary-fixed transition-all"
+                  type="file"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >WhatsApp Contact</label
+                >
+                <input
+                  name="father_whatsapp"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                  type="tel"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Email Address</label
+                >
+                <input
+                  name="father_email"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                  type="email"
+                />
+              </div>
+              <div class="md:col-span-2">
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Place of Residence</label
+                >
+                <input
+                  name="father_residence"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Academic Choice & Former School -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-12 pt-16 border-t border-outline-variant/30"
+          >
+            <div class="md:col-span-1">
+              <h3 class="text-xl font-headline text-primary mb-2">
+                Academic History
+              </h3>
+              <p class="text-sm text-on-surface-variant">
+                Placement preferences and prior educational context.
+              </p>
+            </div>
+            <div class="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Class Applying For</label
+                >
+                <select
+                  name="applying_class"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                >
+                <option>NURSERY</option>
+                <option>MIDDLE</option>
+                <option>TOP</option>
+                  <option>P-1</option>
+                  <option>P-2</option>
+                  <option>P-3</option>
+                  <option>P-4</option>
+                  <option>P-5</option>
+                  <option>P-6</option>
+                  <option>P-7</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >Former School Attended</label
+                >
+                <input
+                  name="former_school"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2 placeholder:text-stone-300"
+                  placeholder="Leave blank if first enrollment"
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Extra-Curricular & Source -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pt-8">
+            <div class="md:col-span-1">
+              <h3 class="text-xl font-headline text-primary mb-2">
+                Holistic Profile
+              </h3>
+              <p class="text-sm text-on-surface-variant">
+                Interests outside the classroom and school awareness.
+              </p>
+            </div>
+            <div class="md:col-span-2 space-y-8">
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-4"
+                  >Extra-Curricular Interests</label
+                >
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  <label class="flex items-center gap-3 cursor-pointer group">
+                    <input
+                      name="interests[]"
+                      value="Music"
+                      class="w-4 h-4 rounded border-outline text-primary focus:ring-primary/20"
+                      type="checkbox"
+                    />
+                    <span class="text-sm group-hover:text-primary transition-colors">Music</span>
+                  </label>
+                  <label class="flex items-center gap-3 cursor-pointer group">
+                    <input
+                      name="interests[]"
+                      value="Sports"
+                      class="w-4 h-4 rounded border-outline text-primary focus:ring-primary/20"
+                      type="checkbox"
+                    />
+                    <span class="text-sm group-hover:text-primary transition-colors">Sports</span>
+                  </label>
+                  <label class="flex items-center gap-3 cursor-pointer group">
+                    <input
+                      name="interests[]"
+                      value="Debating"
+                      class="w-4 h-4 rounded border-outline text-primary focus:ring-primary/20"
+                      type="checkbox"
+                    />
+                    <span class="text-sm group-hover:text-primary transition-colors">Debating</span>
+                  </label>
+                  <label class="flex items-center gap-3 cursor-pointer group">
+                    <input
+                      name="interests[]"
+                      value="Art"
+                      class="w-4 h-4 rounded border-outline text-primary focus:ring-primary/20"
+                      type="checkbox"
+                    />
+                    <span class="text-sm group-hover:text-primary transition-colors">Art</span>
+                  </label>
+                </div>
+              </div>
+              <div>
+                <label
+                  class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                  >How did you hear about us?</label
+                >
+                <select
+                  name="source"
+                  class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2"
+                >
+                  <option>Social Media</option>
+                  <option>Word of Mouth</option>
+                  <option>Billboard</option>
+                  <option>Alumni Recommendation</option>
+                  <option>Local Publication</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- Medical Info -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pt-8">
+            <div class="md:col-span-1">
+              <h3 class="text-xl font-headline text-primary mb-2">
+                Medical Information
+              </h3>
+              <p class="text-sm text-on-surface-variant">
+                Confidential health notices for student safety.
+              </p>
+            </div>
+            <div class="md:col-span-2">
+              <label
+                class="block text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1"
+                >Known Medical Problems or Allergies</label
+              >
+              <textarea
+                name="medical_info"
+                class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-highest transition-all px-0 py-2 placeholder:text-stone-300"
+                placeholder="Provide details if applicable..."
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+          <!-- Declarations -->
+          <div
+            class="pt-12 border-t border-outline-variant/30 flex flex-col items-center"
+          >
+            <div class="max-w-xl space-y-4 mb-12">
+              <label class="flex items-start gap-4 cursor-pointer group">
+                <input
+                  name="terms_agree"
+                  class="mt-1 w-5 h-5 rounded border-outline text-primary focus:ring-primary/20"
+                  type="checkbox"
+                />
+                <span class="text-sm text-on-surface-variant leading-relaxed"
+                  >I agree to abide by the school rules and regulations as
+                  outlined in the Student Handbook and Institutional
+                  Charter.</span
+                >
+              </label>
+              <label class="flex items-start gap-4 cursor-pointer group">
+                <input
+                  name="declaration_agree"
+                  class="mt-1 w-5 h-5 rounded border-outline text-primary focus:ring-primary/20"
+                  type="checkbox"
+                />
+                <span class="text-sm text-on-surface-variant leading-relaxed"
+                  >I declare that all information provided in this application
+                  is true, accurate, and complete to the best of my
+                  knowledge.</span
+                >
+              </label>
+            </div>
+            <button
+              class="signature-gradient text-white px-12 py-4 rounded shadow-lg text-sm font-bold tracking-[0.2em] uppercase hover:scale-[1.02] active:scale-[0.98] transition-all"
+              type="submit"
+            >
+              Submit Application
+            </button>
+            <p
+              class="mt-4 text-[10px] text-on-surface-variant uppercase tracking-widest italic"
+            >
+              A processing notification will be sent via email within 48 hours.
+            </p>
+          </div>
+        </form>
+      </section>
+      <!-- Final Support CTA -->
+      <div class="mt-16 text-center">
+        <p class="text-on-surface-variant font-body">
+          Having trouble with the digital application?
+
+          or visit our help desk.
+        </p>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-400 full-width py-16 px-8 mt-auto">
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-screen-2xl mx-auto"
+      >
+        <div class="col-span-1 md:col-span-1 space-y-6">
+          <div class="text-lg font-serif text-white">
+            IFRAAD Learning Centre
+          </div>
+          <p class="text-xs leading-relaxed max-w-xs">
+            IFRAAD Learning Centre is a dedicated school that offers Islamic and
+            circular studies to all population in the society not forgetting
+            that it is also a Quran Memorization centre.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-serif text-sm mb-6">Quick Links</h4>
+          <ul class="space-y-4 text-xs tracking-widest uppercase">
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="aboutus.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a class="text-white font-bold inline-block" href="program.html"
+                >Programs</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="events.html"
+                >Events</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-6">
+          <h4 class="text-white font-serif text-sm mb-6">Social Media</h4>
+          <ul class="space-y-4 text-xs tracking-widest uppercase">
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="#"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="https://vm.tiktok.com/ZMB7Tcx6K/"
+                >TikTok</a
+              >
+            </li>
+            <li>
+              <a class="text-white inline-block" href="#">X</a>
+            </li>
+            <li>
+              <a
+                class="hover:text-white transition-colors hover:translate-x-1 inline-block"
+                href="www.youtube.com/@Hayafir"
+                >YouTube</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-6">
+          <h4 class="text-white font-serif text-sm mb-6">Contact Info</h4>
+          <ul class="space-y-4 text-xs tracking-widest uppercase">
+            <li class="flex items-center gap-2">
+              <span
+                class="material-symbols-outlined text-sm text-red-800"
+                data-icon="location_on"
+                >location_on</span
+              >
+              Mpigi District [COURT ROAD], Uganda
+            </li>
+            <li class="flex items-center gap-2">
+              <span
+                class="material-symbols-outlined text-sm text-red-800"
+                data-icon="mail"
+                >mail</span
+              >
+              ifraadlearningcentre@gmail.com
+            </li>
+            <li class="flex items-center gap-2">
+              <span
+                class="material-symbols-outlined text-sm text-red-800"
+                data-icon="call"
+                >call</span
+              >
+              +256 705 098208, +256 701 331563, <br />
+              +256 706 944934, +256 771 861177
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="max-w-screen-2xl mx-auto px-8 mt-16 pt-8 border-t border-white/5 text-center"
+        >
+          <p class="text-stone-500 text-[10px] tracking-widest uppercase">
+            © 2026 IFRAAD Learning Centre. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById('admissionForm').addEventListener('submit', function(event) {
+        const form = event.target;
+        let errors = [];
+
+        // Validate Required Fields (matching apply.php logic)
+        if (!form.full_name.value.trim()) errors.push("Student Full Name is required.");
+        if (!form.dob.value) errors.push("Date of Birth is required.");
+        if (!form.gender.value) errors.push("Gender selection is required.");
+
+        // Simple Email Validation regex
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (form.mother_email.value.trim() && !emailRegex.test(form.mother_email.value.trim())) {
+          errors.push("Mother's email format is invalid.");
+        }
+        if (form.father_email.value.trim() && !emailRegex.test(form.father_email.value.trim())) {
+          errors.push("Father's email format is invalid.");
+        }
+
+        // File Size Validation
+        // Note: apply.php has a 5MB limit (5,000,000 bytes)
+        const fileInputs = ['student_photo', 'mother_photo', 'father_photo'];
+        fileInputs.forEach(fieldName => {
+          const input = form.elements[fieldName];
+          if (input && input.files.length > 0) {
+            if (input.files[0].size > 5000000) {
+              errors.push(`${fieldName.replace('_', ' ').toUpperCase()} must be less than 5MB.`);
+            }
+          }
+        });
+
+        // Agreement Checkboxes
+        if (!form.terms_agree.checked) errors.push("You must agree to the school rules and regulations.");
+        if (!form.declaration_agree.checked) errors.push("You must declare that the information provided is true.");
+
+        if (errors.length > 0) {
+          // Prevent form from sending
+          event.preventDefault();
+          
+          // Simple alert with error messages
+          alert("Please correct the following errors:\n\n- " + errors.join("\n- "));
+        }
+      });
+    </script>
+  </body>
+</html>
